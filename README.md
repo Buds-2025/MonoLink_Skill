@@ -1,10 +1,37 @@
 # monolink-skill
 
-This repository contains the packaged `monolink-skill.zip` Codex skill.
+`monolink-skill.zip` is a packaged Codex skill for generating monochrome poetic collage photography prompts or images.
 
-The skill generates relation-first monochrome poetic collage photography prompts or images. It preserves the original MonoLink core idea: visual relationship comes before surface style.
+The current version focuses on **cross-domain visual translation**: the main image and companion image must share a clear visual relationship, but they should not simply stay in the same subject, material, or scene category.
 
-The package uses this Codex skill structure:
+## Core Idea
+
+The skill follows this priority:
+
+1. Cross-domain translation first
+2. Visual relationship second
+3. Monochrome photobook style third
+
+It is designed to avoid weak same-domain pairings such as:
+
+- floral dress -> flower field
+- swallows -> sky or clouds
+- sunset road -> another road or road texture
+
+Instead, it pushes pairings such as:
+
+- floral dress -> moth wings, old map islands, mildew stains, star clusters
+- swallows -> feather barbs, stitching, human silhouettes, music notation
+- sunset road -> palm lines, blood vessels, river paths, film scratches
+
+## Hard Rules
+
+- The two images must cross at least two domains, preferably three: subject type, material, scale, scene system, or behavior.
+- The relationship must remain visually readable through contour, direction, rhythm, structure, scale contrast, extension, or replacement.
+- The white gutter between panels must stay completely clean. No subject, line, smoke, crack, shadow, petal, stroke, or visual bridge may enter or cross the gutter safety zone.
+- Black-and-white grain, wide borders, dust, scratches, and quiet mood are only the outer style layer. They must not compensate for a weak relationship.
+
+## Package Structure
 
 ```text
 monolink-skill/
@@ -19,12 +46,8 @@ monolink-skill/
     └── style-analysis.md
 ```
 
-- `SKILL.md`: core workflow, trigger metadata, relationship rules, prompt strategy, and failure checks.
-- `agents/openai.yaml`: Codex UI metadata and the default `$monolink-skill` invocation prompt.
-- `references/composition-grammar.md`: layout, boundary, negative space, and relationship placement guidance.
-- `references/examples.md`: example relationship judgments and finished prompts.
-- `references/prompt-template.md`: base and relationship-strengthened prompt templates.
-- `references/relation-first-rules.md`: stricter relationship-first rules and inspection questions.
-- `references/style-analysis.md`: monochrome photobook style, texture, subject language, and mood.
+## Install
 
-Install by extracting `monolink-skill.zip` into your Codex skills directory.
+Extract `monolink-skill.zip` into your Codex skills directory.
+
+The zip contains the complete skill folder and is the artifact intended for installation or sharing.
