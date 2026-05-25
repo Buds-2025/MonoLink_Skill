@@ -1,4 +1,0 @@
-interface:
-  display_name: "monolink-skill"
-  short_description: "Relation-first black-and-white collage prompt workflow"
-  default_prompt: "Use $monolink-skill to create a relation-first monochrome collage image prompt."
