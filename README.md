@@ -29,6 +29,7 @@ Instead, it pushes pairings such as:
 - The two images must cross at least two domains, preferably three: subject type, material, scale, scene system, or behavior.
 - The relationship must remain visually readable through contour, direction, rhythm, structure, scale contrast, extension, or replacement.
 - The white gutter between panels must stay completely clean. No subject, line, smoke, crack, shadow, petal, stroke, or visual bridge may enter or cross the gutter safety zone.
+- The outer white border must be exactly equal on all four sides. If composition needs adjustment, resize or crop only the internal image area; never compensate by widening, narrowing, or cropping one side of the outer border.
 - Black-and-white grain, wide borders, dust, scratches, and quiet mood are only the outer style layer. They must not compensate for a weak relationship.
 
 ## Package Structure
